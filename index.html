@@ -39,18 +39,22 @@
 
 				<!-- Menu -->
 				<nav id="menu">
-					<h2>Menu</h2>
+					<h2>All Things Good</h2>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html">Ipsum veroeros</a></li>
+						<li><a href="generic.html">Projects</a></li>
 						<li><a href="generic.html">Tempus etiam</a></li>
 						<li><a href="generic.html">Consequat dolor</a></li>
 						<li><a href="elements.html">Elements</a></li>
 					</ul>
 				</nav>
-				<router-view></router-view>
+				<router-view>
+				
+				
+				</router-view>
 				<footer id="footer">
 					<div class="inner">
+					
 						<section>
 							<h2>Get in touch</h2>
 							<form method="post" action="#">
@@ -110,9 +114,10 @@
 								<section class="tiles">
 									<article v-for="project in projects" v-bind:class="project.style">
 										<span class="image">
-											<img v-bind:src="images/gear.png" alt="" />
+											<img v-bind:src="project.image" alt="" />
 										</span>
 										<router-link v-bind:to="project.href">
+										
 											<h2>{{project.title}}</h2>
 											<div class="content">
 												<p>{{project.description}}</p>
@@ -459,6 +464,7 @@
 						path: project.href, component: {
 							template:`<div id="main">
 								<div class="inner">
+								
 								<header>
 									<h1>{{title}}</h1>
 									
