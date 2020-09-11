@@ -24,7 +24,7 @@
 
 						<!-- Logo -->
 							<a href="index.html" class="logo">
-								<span class="symbol"><img src="images/gear.png" alt="" /></span><span class="title">Portfolio</span>
+								<span class="symbol"><img src="images/avatar.png" alt="" /></span><span class="title">Portfolio</span>
 							</a>
 
 						<!-- Nav -->
@@ -110,7 +110,7 @@
 								<section class="tiles">
 									<article v-for="project in projects" v-bind:class="project.style">
 										<span class="image">
-											<img v-bind:src="project.image" alt="" />
+											<img v-bind:src="images/gear.png" alt="" />
 										</span>
 										<router-link v-bind:to="project.href">
 											<h2>{{project.title}}</h2>
